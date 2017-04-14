@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Low Yeong Yih"]
   spec.email         = ["skye19923@hotmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "A gem that sends data to AWS Kinesis"
+  spec.description   = "testing...."
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
