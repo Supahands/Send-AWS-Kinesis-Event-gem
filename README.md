@@ -1,8 +1,6 @@
 # SendAwsKinesisEvent
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/send_aws_kinesis_event`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is to send any generated event data to AWS Kinesis stream service.
 
 ## Installation
 
@@ -22,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Environment variable to be included in your application:
+`AWS_REGION`
+`AWS_ACCESS_KEY_ID`
+`AWS_SECRET_ACCESS_KEY`
+`KINESIS_STREAM_NAME`
+
+Use SendAwsKinesisEvent.call(partition_key, data) in your application to send data to AWS Kinesis.
+
+`partition_key` : event type
+`data` : data to be sent to Kinesis
 
 ## Development
 
@@ -32,10 +39,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/send_aws_kinesis_event.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Supahands/Send-AWS-Kinesis-Event-gem.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
