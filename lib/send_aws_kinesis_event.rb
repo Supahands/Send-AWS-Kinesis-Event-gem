@@ -1,4 +1,5 @@
 require "send_aws_kinesis_event/version"
+require 'aws-sdk-kinesis'
 
 module SendAwsKinesisEvent
   def self.call(partition_key, data)
