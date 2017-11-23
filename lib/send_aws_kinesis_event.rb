@@ -16,7 +16,8 @@ module SendAwsKinesisEvent
                              :data => data_blob,
                              :partition_key => partition_key
       )
-    rescue
+    rescue => error
+      puts error
       if record
         shard_id = record[:shard_id] if record
         sequence_number = record[:sequence_number] if record
